@@ -6,11 +6,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/")
+@RequestMapping("/atividades")
 public class HelloWorldController {
 
-	@GetMapping("")
-	public ResponseEntity<String> helloWorld() {
+	@GetMapping("hello")
+	public ResponseEntity<?> helloWorld() {
 		
 		//Digite -> Hello world !
 		return ResponseEntity.ok("Hello world !");
